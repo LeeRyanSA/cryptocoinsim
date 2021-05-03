@@ -1,4 +1,4 @@
-        <modelVersion>4.0.0</modelVersion>
+        <project>4.0.0</project>
         <groupId>com.my.apps</groupId>
         <artifactId>DummyHerokuApp</artifactId>
         <version>0.0.1-SNAPSHOT</version>
