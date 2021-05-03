@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'b)v+=^=-d3*h3--=%6-#45z*rvc-70rk3_5zb23ued&=+*!!r7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['cryptocoinsim.herokuapp.com']
 
