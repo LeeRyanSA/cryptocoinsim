@@ -129,9 +129,10 @@ STATICFILES_DIRS = (
 LOGIN_REDIRECT_URL = '/market/'
 LOGOUT_REDIRECT_URL = '/accounts/login/'
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
