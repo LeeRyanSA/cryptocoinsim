@@ -25,7 +25,7 @@ SECRET_KEY = 'b)v+=^=-d3*h3--=%6-#45z*rvc-70rk3_5zb23ued&=+*!!r7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['cryptocoinsim.herokuapp.com']
 
 
 # Application definition
