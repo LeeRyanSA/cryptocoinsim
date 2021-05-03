@@ -1,4 +1,4 @@
 django
 django-heroku
-python==3.9.4
+python-3.6.8
 javascript
