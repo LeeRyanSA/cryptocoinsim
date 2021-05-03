@@ -1,4 +1,4 @@
 django
 django-heroku
-python
+python 3.9
 javascript
