@@ -11,8 +11,6 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
-import django_heroku
-django_heroku.settings(locals())
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -110,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'PDT'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
@@ -120,24 +118,11 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-
-
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
-#REDIRECT AFTER LOGIN
-LOGIN_REDIRECT_URL = '/market/'
-LOGOUT_REDIRECT_URL = '/accounts/login/'
+# https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
-
-# Simplified static file serving.
-# https://warehouse.python.org/project/whitenoise/
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+#REDIRECT AFTER LOGIN
+LOGIN_REDIRECT_URL = '/market/'
+LOGOUT_REDIRECT_URL = '/accounts/login/'
